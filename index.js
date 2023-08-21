@@ -8,12 +8,7 @@ dotenv.config();
 const app = express()
 
 
-try {
-    await db.authenticate();
-    console.log('database connected');
-} catch (error) {
-    console.error(error)
-}   
+ 
 app.use(cors({credentials:true, origin:'http://localhost:3000'}))
 app.use(cookieParser());
 app.use(express.json());
