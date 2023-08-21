@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsIm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW4iLCJpYXQiOjE2OTI2MTc2NjEsImV4cCI6MTY5MjYxNzY3Nn0.kGHh3AcK-4Zw3HFtDLuyYM8Gp8BF29QA9GcytckPHVo
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "MSH2",
+    "email": "muhsyarof123@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "muhsyarof121@gmail.com",
+    "password": "1234567"
+}
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
